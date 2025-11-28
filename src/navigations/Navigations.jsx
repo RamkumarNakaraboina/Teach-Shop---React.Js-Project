@@ -4,7 +4,6 @@ import Cart from "../pages/Cart";
 import Home from "../pages/Home";
 import ProductDetails from "../pages/ProductDetails";
 import AllProductsPage from "../pages/AllProduct";
-
 const Navigations = () => {
   return (
     <Routes>
@@ -15,5 +14,4 @@ const Navigations = () => {
     </Routes>
   );
 };
-
 export default Navigations;
