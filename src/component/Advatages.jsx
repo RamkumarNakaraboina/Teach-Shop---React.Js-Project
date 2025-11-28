@@ -6,7 +6,6 @@ const Advantages = () => {
       <h3 style={{ textAlign: "center", color: "white" }} className="p-4">
         Our Advantages
       </h3>
-
       <div className="d-flex gap-2 flex-nowrap">
         <div className="feature-card bg-dark">
           <i className="fa-solid fa-truck-fast icon-box"></i>
@@ -15,7 +14,6 @@ const Advantages = () => {
             <p className="feature-text">Ship in 24 Hours</p>
           </div>
         </div>
-
         <div className="feature-card">
           <i className="fa-solid fa-shield-halved icon-box"></i>
           <div className="text-box">
