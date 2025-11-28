@@ -224,14 +224,6 @@ const ProductDetails = () => {
         {/* Tab Content */}
         <div className="mt-6">
           {activeTab === "specifications" && (
-            // <div className="grid grid-cols-2 gap-4">
-            //     <p><strong>Brand:</strong> JBL</p>
-            //     <p><strong>Model:</strong> JBL Live 660NC</p>
-            //     <p><strong>Generic Name:</strong> Headphones</p>
-            //     <p><strong>Type:</strong> Over Ear</p>
-            //     <p><strong>Connectivity:</strong> Wireless</p>
-            //     <p><strong>Microphone:</strong> Yes</p>
-            // </div>
             <div className="grid grid-cols-2 gap-2 text-white specificationWidth w-[600px]">
               <p className="font-light paddingbrand">Brand</p>
               <p className="font-light">{product.brand}</p>
