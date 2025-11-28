@@ -62,7 +62,6 @@ body {
 .product_font_head {
   color: white;
 }
-
 /* Responsive image sizes */
 @media (max-width: 768px) {
   .carousel-item-custom:nth-child(1) img,
@@ -70,13 +69,11 @@ body {
     width: 8vw;
     height: 8vw;
   }
-
   .carousel-item-custom:nth-child(2) img,
   .carousel-item-custom:nth-child(4) img {
     width: 10vw;
     height: 10vw;
   }
-
   .carousel-item-custom:nth-child(3) img {
     width: 13vw;
     height: 13vw;
@@ -113,7 +110,6 @@ body {
 .button_fist_prod {
   background-color: rgba(208, 6, 6, 0.999) !important;
 }
-
 @media (max-width: 425px) {
   .button-container {
     gap: 8px;
@@ -196,10 +192,3 @@ body {
   background-color: red;
   color: white;
 }
-
-/* body{
-        background-color: aliceblue !important;
-    } */
-/* .bgg{
-        height: 10px !important;
-     } */
