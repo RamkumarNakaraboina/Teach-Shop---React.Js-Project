@@ -5,8 +5,6 @@
   font-style: normal;
   color: white !important;
   font-size: 2.5rem !important;
-
-
 }
 
 .si {
@@ -21,7 +19,6 @@
 
 .user_font {
   color: white !important;
-
 }
 
 .user_font:hover {
@@ -31,7 +28,6 @@
 .btn_user {
   background-color: none !important;
   border: solid 2px white !important;
-
 }
 
 .bg_user {
@@ -68,7 +64,6 @@ input::placeholder {
 .button_facebook {
   background-color: rgba(52, 14, 188, 0.856) !important;
   color: white;
-
 }
 
 .button_google {
@@ -93,7 +88,7 @@ input::placeholder {
 }
 
 body::selection {
-  background-color: red ;
+  background-color: red;
 }
 
 @media only screen and (max-width: 768px) {
@@ -187,10 +182,10 @@ body::selection {
     font-size: 0.5rem !important;
     padding: 0.5rem 0.5rem 0.5rem 0.3rem !important;
   }
-  .userspa{
+  .userspa {
     padding-left: 1rem;
   }
-  .searchboxx{
+  .searchboxx {
     width: 100% !important;
     margin-top: 2px;
   }
@@ -206,14 +201,11 @@ body::selection {
   }
 }
 
-@media (min-width:767px) {
+@media (min-width: 767px) {
   .ooo {
     /* background-color: aqua !important; */
     margin-left: -37px;
   }
-
-
-
 }
 
 .icons_hover_zoome:hover {
@@ -221,44 +213,41 @@ body::selection {
   transition: 0.2s;
 }
 
-  @media (max-width:385px) {
-    .navlogo1{
-      font-size: 1.5rem !important;
-      /* margin-right: 20px !important; */
-      /* padding-right: 10px !important; */
-    }
-   
-    .user_set_small{
-      /* padding-left: 20px !important; */
-      margin-right: -20px !important;
-    }
-      
-  
+@media (max-width: 385px) {
+  .navlogo1 {
+    font-size: 1.5rem !important;
+    /* margin-right: 20px !important; */
+    /* padding-right: 10px !important; */
   }
 
+  .user_set_small {
+    /* padding-left: 20px !important; */
+    margin-right: -20px !important;
+  }
+}
 
 .icons_hover_zoome {
   color: white !important;
   /* font-size: 2.2rem;  */
 }
-.searColor{
-    font-size: 5.3rem !important;
+.searColor {
+  font-size: 5.3rem !important;
 }
-.cartSizes{
+.cartSizes {
   font-size: 2.3rem !important;
 }
-.userSizes{
+.userSizes {
   font-size: 2.6rem !important;
 }
-.borderseconf{
-  border-color: rgb(35, 38, 40,1) !important;
+.borderseconf {
+  border-color: rgb(35, 38, 40, 1) !important;
 }
-.linknoness{
+.linknoness {
   /* text-decoration:none !important; */
   /* background-color: red !important; */
   color: aliceblue !important;
   /* padding: 500px !important;  */
 }
-.boooo{
- border: 2px solid white;
+.boooo {
+  border: 2px solid white;
 }
