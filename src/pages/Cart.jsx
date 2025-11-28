@@ -1,18 +1,26 @@
-
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { FaArrowLeftLong } from "react-icons/fa6";
-import { increaseQty, decreaseQty, removeFromCart } from "../reduxToolKit-store/productSlice";
+import {
+  increaseQty,
+  decreaseQty,
+  removeFromCart,
+} from "../reduxToolKit-store/productSlice";
 import { BsCartX } from "react-icons/bs";
 import "./Cart.css";
 const Cart = () => {
   const dispatch = useDispatch();
   const { cart } = useSelector((state) => state.cartItems);
-
   // Calculate totals
-  const originalPrice = cart.reduce((acc, item) => acc + item.originalPrice * item.quantity, 0);
-  const finalPrice = cart.reduce((acc, item) => acc + item.finalPrice * item.quantity, 0);
+  const originalPrice = cart.reduce(
+    (acc, item) => acc + item.originalPrice * item.quantity,
+    0
+  );
+  const finalPrice = cart.reduce(
+    (acc, item) => acc + item.finalPrice * item.quantity,
+    0
+  );
   const discount = originalPrice - finalPrice;
 
   return (
@@ -28,7 +36,7 @@ const Cart = () => {
             Your cart is empty
           </h1>
           <div className="w-full flex justify-center mt-4 ghhh">
-            <Link to="/Allproduct" className="qpqp" >
+            <Link to="/Allproduct" className="qpqp">
               <button className="bg-red-500 border rounded-4 text-4xl flex text-white fonbol items-center gap-5 font-bold py-4 px-8">
                 <FaArrowLeftLong />
                 Continue Shopping
@@ -56,7 +64,9 @@ const Cart = () => {
             </div>
             <div className="d-flex justify-content-between text-white">
               <p>Discount</p>
-              <p style={{ color: "rgb(0, 254, 0)" }}>- ₹{discount.toLocaleString()}</p>
+              <p style={{ color: "rgb(0, 254, 0)" }}>
+                - ₹{discount.toLocaleString()}
+              </p>
             </div>
             <div className="d-flex justify-content-between text-white">
               <p>Delivery</p>
@@ -94,18 +104,27 @@ const Cart = () => {
                       className="image_scroling"
                       src={item.images[0]}
                       alt={item.title}
-                      style={{ width: "100px", height: "100px", objectFit: "contain" }}
+                      style={{
+                        width: "100px",
+                        height: "100px",
+                        objectFit: "contain",
+                      }}
                     />
                     <span className="text-center text-sm-start my-2 ms-lg-5">
                       <h5 className="text-white fs-3 fw-bold">{item.title}</h5>
                       <p className="card-text text-white fs-3 fw-bold">
                         ₹{item.finalPrice}
                         <span className="text-muted ms-1">
-                          <s className="font_mute_cart">₹{item.originalPrice}</s>
+                          <s className="font_mute_cart">
+                            ₹{item.originalPrice}
+                          </s>
                         </span>
                       </p>
                       {/* Quantity Buttons */}
-                      <div className="input-group mx-auto mx-sm-0" style={{ width: "200px" }}>
+                      <div
+                        className="input-group mx-auto mx-sm-0"
+                        style={{ width: "200px" }}
+                      >
                         <button
                           style={{ width: "50px" }}
                           className="border-end-0 btn btn-outline-secondary text-light"
@@ -147,7 +166,9 @@ const Cart = () => {
                     </div>
                   </div>
                   <br />
-                  <hr style={{ color: "white", width: "90%", margin: "0 auto" }} />
+                  <hr
+                    style={{ color: "white", width: "90%", margin: "0 auto" }}
+                  />
                 </div>
               ))}
             </div>
@@ -157,5 +178,4 @@ const Cart = () => {
     </div>
   );
 };
-
 export default Cart;
