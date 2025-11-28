@@ -6,11 +6,9 @@ import fourthSlider from "../images/products/thirdSlider.png";
 import sevenSlider from "../images/products/boat203-1.png";
 import "./Slider.css"; // Create a CSS file for styles
 import { Link } from "react-router-dom";
-
 const Carousel = () => {
   const trackRef = useRef(null);
   const [current, setCurrent] = useState(0);
-
   // Carousel logic
   useEffect(() => {
     const track = trackRef.current;
@@ -20,8 +18,8 @@ const Carousel = () => {
       const first = items.shift();
       items.push(first);
       track.innerHTML = ""; // Clear track
-      items.forEach(item => track.appendChild(item)); // Append reordered items
-      setCurrent(prev => (prev + 1) % items.length);
+      items.forEach((item) => track.appendChild(item)); // Append reordered items
+      setCurrent((prev) => (prev + 1) % items.length);
     }, 2000);
 
     return () => clearInterval(interval);
@@ -90,7 +88,6 @@ const Carousel = () => {
             </span>
           </h4>
         </div>
-
         <div className="carousel-item-custom">
           <p className="product_font_carousel">JBL Endurance Run</p>
           <Link to="/Allproduct">
@@ -104,8 +101,6 @@ const Carousel = () => {
           </h4>
         </div>
       </div>
-
-      {/* 🔴 Dots below carousel */}
       <div className="dots-container">
         {Array.from({ length: totalSlides }).map((_, index) => (
           <span
@@ -117,5 +112,4 @@ const Carousel = () => {
     </div>
   );
 };
-
 export default Carousel;
