@@ -1,7 +1,5 @@
 import React from "react";
 import "./Advantages.css";
-// import "./Advantages.css";
-
 const Advantages = () => {
   return (
     <div className="container p-4">
@@ -45,5 +43,4 @@ const Advantages = () => {
     </div>
   );
 };
-
 export default Advantages;
