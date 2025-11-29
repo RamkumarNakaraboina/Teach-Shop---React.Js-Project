@@ -4,7 +4,6 @@ import Second from "../images/products/boat131-2.png";
 import Third from "../images/products/boat131-3.png";
 // import Fourth from "../images/products/boat203-1.png";
 import thirteens from "../images/products/jbl760nc-1.png";
-
 export const SliderData = [
   {
        id: 1,
